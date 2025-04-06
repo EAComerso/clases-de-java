@@ -1,13 +1,23 @@
-//let personaje1 = "Goku"
-//let personaje2 = "Vegeta"
-//let personaje3 = "Picollo"
-//let personaje4 = "Krillin"
-//let personaje5 = "Freezer"
-//let personaje6 = "Gohan"
-//let personaje7 = "Trunks Futuro"
-//let personaje8 = "Cell"
-//let personaje9 = "Majin bu"
-//let personaje10 = "Ten shin han"
+const Usuarios = [
+    {nombre: "Esteban", edad: 37},
+    {nombre: "Alberto", edad: 67},
+    {nombre: "Antonio", edad: 72},
+    {nombre: "Jazmin", edad: 15},
+    {nombre: "Stephanie", edad: 29},
+    {nombre: "Melina", edad: 48},
+];
 
-const Humanos = ['Krillin','Ten shin han']
-consolelog 
+for (let i = 0; i < Usuarios.length; i++) {
+    const edad = Usuarios[i].edad;
+    const nombre = Usuarios[i].nombre;
+
+    if (edad >= 17 && edad <= 65) {
+        alert(`${nombre} (Edad: ${edad}): Licencia por 5 años`);
+    } else if (edad >= 66) {
+        alert(`${nombre} (Edad: ${edad}): Licencia por 1 año`);
+    } else {
+        alert(`${nombre} (Edad: ${edad}): No pueden sacar la licencia`);
+    } 
+     
+}
+console.log (`Para generar mas usuarios ingrese nuevamente mediante Const=usuarios Muchas gracias!`);
